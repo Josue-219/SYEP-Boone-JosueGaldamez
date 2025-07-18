@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:crimson;
+    text-align: center;
+    line-height: 2.1;
+}
+
+.hero img{
+  border-radius: 50%;  
+}
+
+.accent{
+    color:antiquewhite;
+}
