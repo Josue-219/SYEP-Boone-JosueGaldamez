@@ -2,18 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
-    background-color:crimson;
+    background-color:rgb(152, 197, 218);
     text-align: center;
     line-height: 2.1;
+    border: 5px solid gray;
+    padding:10px;
+    
+    
+}
+ 
+#about{
+    width: 500px; 
+    border:1px solid ;
+    padding: 50px;
+    margin:20px;
+    
+    
+    
 }
 
 .hero img{
   border-radius: 50%;  
+  font-family:"Arial"
 }
 
 .accent{
-    color:antiquewhite;
+    color:rgb(124, 103, 75);
+}
+
+.section{
+    font-family:"Rockwell"
+}
+
+#skills{
+    background-color:rgb(168, 182, 182)
+    padding:10px
+    
 }
