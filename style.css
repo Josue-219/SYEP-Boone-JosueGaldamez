@@ -43,3 +43,22 @@ body{
     padding:10px
     
 }
+
+@media screen (max-width: 768px){
+    body{background-color: crimson;}
+}
+
+.grid{
+    display:flex;
+    justify-content: center;
+  /*  justify-items: space-around; */
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.gird div{
+    background-color: aliceblue;
+    border-radius: 100px;
+    padding: 10px;
+    min-width: 80px;
+}
