@@ -1,31 +1,36 @@
 const reviews = [
     {
        id: 1,
-       name: 'Susa  Smith',
-       job: 'web developer',
-       img: '#',
-       text:'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquefaucibus ex sapien vitae pellentesque sem placerat. In id cursusmi pretium tellus duis convallis. Tempus leo eu aenean sed diamurna tempor.',
+       name: 'Brian Palacios',
+       job: 'Algebra 2 High school Teacher',
+       img: 'Josue + Palacios.jpg',
+       text:'Josue is an outstanding student, but an even better young man. He values high-quality relationships, puts family first, and finds unique ways to bring people together. In June, he helped create one of the most memorable moments of my 20-year teaching career when he served as a "promoter" of a spirited one-on-one basketball game for me and another student. He even crafted a full-fledged contract for us to sign! In class, Josue is intelligent and isnt afraid to ask questions that other students shy away from. Given his maturity and willingness to grow, any teacher would be fortunate to have him as their student.',
     },
     {
       id: 2,
-     name:'Anna Johnson',
-     job: 'web designer',
-     img: '#',
-     text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquefaucibus ex sapien vitae pellentesque sem placerat. In id cursusmi pretium tellus duis convallis. Tempus leo eu aenean sed diamurna tempor.',
+     name:'Nikhil Krishna',
+     job: 'Chemistry Highschool Teacher',
+     img: 'mr krish.png',
+     text: 'Josue is a kind-hearted, consistent student, who always wants to get better. He is honest, reflective, and well-respected by his peers. I was certainly impressed by his overall performance when I taught him last year!',
     },
     {
         id: 3,
-        name: 'John Doe',
-        job: 'mechanic',
-        img: '#',
-        text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisquefaucibus ex sapien vitae pellentesque sem placerat. In id cursusmi pretium tellus duis convallis. Tempus leo eu aenean sed diamurna tempor.',
+        name: 'Karelys Silva',
+        job: 'Global 10 History Highschool Teacher',
+        img: 'ms silva.jpg',
+        text: 'Josue Galdamez is an outstanding student and a remarkable young man. He leads with honor and integrity, consistently giving his best in all that he undertakes. His selfless goals and dedication to helping others are a true reflection of his admirable character. Josues drive, compassion, and strong moral values set him apart as a role model among his peers.',
     },
 ];
 
+
 const img = document.getElementById('person-img');
 const author = document.getElementById('author');
-const job = document.getElementsByClassName('job');
-const info = document.getElementsByClassName('info');
+const job = document.getElementById('job');
+const info = document.getElementById('info');
+//const img = document.getElementById('person-img');
+//const author = document.getElementById('author');
+//const job = document.getElementsByClassName('job');
+//const info = document.getElementsByClassName('info');
 
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
@@ -45,7 +50,7 @@ function showPerson(person){
     const item = reviews[person];
     img.src = item.img;
     author.textContent = item.name;
-    job.textcontent = item.job;
+    job.textContent = item.job;
     info.textContent = item.text;
 }
 
